@@ -1,0 +1,8 @@
+= Sample Article
+
+This is a sample article.
+
+.List Title
+* Item one
+* Item two
+* Item three

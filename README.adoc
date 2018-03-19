@@ -1,0 +1,18 @@
+= Asciidoctor LaTeX Playground
+
+The Asciidoctor LaTeX converter does not support custom templates by default.
+Therefore, we have to add some patches to make it work.
+
+First, install the dependencies:
+
+ $ bundle --path=.bundle/gems
+
+Verify that you can run the `asciidoctor-latex` command.
+
+ $ bundle exec asciidoctor-latex -v
+
+To apply the patches that enable the use of custom templates with `asciidoctor-latex`, use the following command:
+
+ $ bundle exec -r ./patches -T templates sample.adoc
+
+You should see that the templates are used in place of the matching handler method in Asciidoctor LaTeX.
