@@ -13,6 +13,6 @@ Verify that you can run the `asciidoctor-latex` command.
 
 To apply the patches that enable the use of custom templates with `asciidoctor-latex`, use the following command:
 
- $ bundle exec -r ./patches -T templates sample.adoc
+ $ bundle exec asciidoctor-latex -r ./patches -T templates sample.adoc
 
 You should see that the templates are used in place of the matching handler method in Asciidoctor LaTeX.
